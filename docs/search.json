@@ -7,10 +7,17 @@
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
+    "objectID": "demo.html#quarto",
+    "href": "demo.html#quarto",
+    "title": "demo",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
     "objectID": "demo.html#running-code",
     "href": "demo.html#running-code",
     "title": "demo",
     "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\n\nplot(1:1)\n\n\n\n\n\nlibrary(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\ndata <- read.csv(\"https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv\")\n\nfig <- plot_ly(data, x = ~Women, y = ~Men, text = ~School, type = 'scatter', mode = 'markers',\n        marker = list(size = ~Gap, opacity = 0.5))\nfig <- fig %>% layout(title = 'Gender Gap in Earnings per University',\n         xaxis = list(showgrid = FALSE),\n         yaxis = list(showgrid = FALSE))\n\nfig"
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\n\nplot(1:1)\n\n\n\n\n\n\n\n\n\nlibrary(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\ndata &lt;- read.csv(\"https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv\")\n\nfig &lt;- plot_ly(data, x = ~Women, y = ~Men, text = ~School, type = 'scatter', mode = 'markers',\n        marker = list(size = ~Gap, opacity = 0.5))\nfig &lt;- fig %&gt;% layout(title = 'Gender Gap in Earnings per University',\n         xaxis = list(showgrid = FALSE),\n         yaxis = list(showgrid = FALSE))\n\nfig"
   }
 ]
